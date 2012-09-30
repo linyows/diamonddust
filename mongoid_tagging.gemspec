@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/mongoid/version', __FILE__)
+require File.expand_path('../lib/mongoid/tagging/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["linyows"]
@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "mongoid_tagging"
   gem.require_paths = ["lib"]
-  gem.version       = MongoidTagging::VERSION
+  gem.version       = Mongoid::Tagging::VERSION
 end
