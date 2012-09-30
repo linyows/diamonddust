@@ -4,9 +4,9 @@ require File.expand_path('../lib/mongoid_tagging/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["linyows"]
   gem.email         = ["linyows@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{ Gem to add tags features if you're using rails3 with mongoid3 }
+  gem.summary       = %q{ This will add a tag field to the Document. }
+  gem.homepage      = "https://github.com/linyows/mongoid_tagging"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
