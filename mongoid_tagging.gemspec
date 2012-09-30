@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/mongoid_tagging/version', __FILE__)
+require File.expand_path('../lib/mongoid/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["linyows"]
