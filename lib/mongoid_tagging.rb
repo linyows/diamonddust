@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), 'mongoid/tagging')
+require File.join(File.dirname(__FILE__), 'mongoid_tagging')
