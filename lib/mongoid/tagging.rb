@@ -4,7 +4,7 @@ module Mongoid
 
     included do
       extend ClassMethods
-      send :include, InstanceMethods
+      include InstanceMethods
 
       field :tags, type: Array
       attr_accessible :tags
