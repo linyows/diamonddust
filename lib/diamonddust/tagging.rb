@@ -4,7 +4,6 @@ module Diamonddust
 
     included do
       extend ClassMethods
-      include InstanceMethods
 
       field :tags, type: Array
       attr_accessible :tags
@@ -25,22 +24,20 @@ module Diamonddust
       end
     end
 
-    module InstanceMethods
-      def tags
-        return super unless super.is_a?(Array)
-        (super || []).join(', ')
-      end
+    def tags
+      return super unless super.is_a?(Array)
+      (super || []).join(', ')
+    end
 
-      def tags_origin
-        self.tags.strip.gsub(/,\s*,/, ',').split(/\s*,\s*/).uniq
-      end
+    def tags_origin
+      self.tags.strip.gsub(/,\s*,/, ',').split(/\s*,\s*/).uniq
+    end
 
-      private
+    private
 
-      def tags_to_array
-        return unless self.tags || self.tags.is_a?(String)
-        self.tags = tags_origin
-      end
+    def tags_to_array
+      return unless self.tags || self.tags.is_a?(String)
+      self.tags = tags_origin
     end
   end
 end
