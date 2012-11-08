@@ -8,8 +8,8 @@ RSpec.configure do |c|
 end
 
 require 'mongoid'
-require 'mongoid_tagging'
+require 'diamonddust'
 
 Mongoid.configure do |c|
-  c.master = Mongo::Connection.new.db('mongoid_tagging_test')
+  c.master = Mongo::Connection.new.db('diamonddust_test')
 end

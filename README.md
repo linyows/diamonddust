@@ -1,4 +1,4 @@
-# Mongoid::Tagging
+# Diamonddust
 
 This will add a tag field to the Document.
 
@@ -6,7 +6,7 @@ This will add a tag field to the Document.
 
 Add this line to your application's Gemfile:
 
-    gem 'mongoid_tagging'
+    gem 'diamonddust'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install mongoid_tagging
+    $ gem install diamonddust
 
 ## Usage
 
